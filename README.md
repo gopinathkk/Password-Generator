@@ -1,100 +1,103 @@
-# 03 JavaScript: Password Generator
+# Password-Generator
 
-## Your Task
+# Password-Generator
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+Password Generator is an application which was assigned as the homework for  week 3 of Monash Uni Bootcamp.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+This Challenge requires me to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected.
 
-## User Story
+This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
 
-## Acceptance Criteria
+## Getting Started
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link. Or, download the sources files to use this as a template.
 
-## Mock-Up
+Git Hub 
 
-The following image shows the web application's appearance and functionality:
+* [GitHub Repository]( https://github.com/gopinathkk/Password-Generator)
+* [Deployed GitHub ]( https://gopinathkk.github.io/Password-Generator/)
+* [Full Demo Video](https://drive.google.com/file/d/10da4Te-ywl3aBuG3pL4jRAxBcFI6w871/view)
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
 
-## Grading Requirements
+![Password-Generator Demo](assets/demo/Animation.gif)
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
 
-This Challenge is graded based on the following criteria: 
+### Prerequisites
 
-### Technical Acceptance Criteria: 40%
+To install this application, you will need a text editor. I recommend Visual Studio Code. 
 
-* Satisfies all of the preceding acceptance criteria.
+### Installing
 
-### Deployment: 32%
+To install this code, download the zip file, or use GitHub's guidelines to clone the repository. 
 
-* Application deployed at live URL.
+### Summary
+* HTML and CSS and Javascript documents create a random password generator 
+* This project emphasizes the use of using Javascript to make dynamic changes to an HMTL document
 
-* Application loads with no errors.
+![Application](assets/Images/Password-Generator.PNG)
 
-* Application GitHub URL submitted.
+### This project has the following features: 
+* A generate button
+    * This will send the user a series of prompts and confirms
+    * After user data is collected, a random password will be generated using Javascript
+    * The application will verify the password to ensure it meets the criteria slected by the user.
 
-* GitHub repository that contains application code.
+    ![User Criteria selection](assets/Images/Password user entry.PNG)
 
-### Application Quality: 15%
+    * A Textarea
+    * This textarea will display the users password once it is generated
 
-* Application user experience is intuitive and easy to navigate.
+    ![Password](assets/Images/Password.PNG)
 
-* Application user interface style is clean and polished.
 
-* Application resembles the mock-up functionality provided in the Challenge instructions.
+### Psuedo Code and Project Requirements: 
 
-### Repository Quality: 13%
+* The user will be prompted to choose from the following password criteria: 8 and 128 characters
 
-* Repository has a unique name.
+* The user will receive a confirm for: 
+    * Password containing lower case, upper case, numbers and  special characters
+    *  The application should validate user input and ensure that at least one character type is selected.
+    * If, else if statement is used  to validate user selection and to assign the selected items to an arrary.
+    * Once all prompts are answered the password will be genearted based on the length and criteria selection using math.random and math.floor 
+    * Once the password is generated, it will be validated to enusre all user criteria are met.
+    * Event listener will determine the password output with function to populate the value into the test area.
 
-* Repository follows best practices for file structure and naming conventions.
+    ### This project has script features of:
+* Variable declaration area 
+* An event listener (onclick) called generatePassword
+    * This will prompt the user for input between 8-128
+    * This will validate that the input is a number within range, or is a number
+    * This then uses the input to determine the types (or choices) or letters of characters used, using an if statement
+    * This then assigns values to the variables using arrays for character, number or alphabet
+* Another variable is created to concatenate the above variables
+* A for loop will loop through the enter prompt until it reaches the number entered by user. 
+* A password variable takes the value from the for loop, and converts it to a string.
+* The password will be validated against the user selection. If the password do not contains all set of characters as per user selection , then the password will be regenerated and validate again till all criteria’s are met 
+* The string value then populates into the text area for the user using a writePassword function.
+* An event listener (onlick) has also been created for the copy to clipboard feature. 
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+### To Execute File:
+> Open in browser
 
-* Repository contains multiple descriptive commit messages.
+### Features: 
+* One HTML Pages
+    * Index.html 
+        * Contains basic user input items and buttons with divs and ids
+* One CSS Page
+    * Styles.css
+        * Contains centering and styling for html user input features
+        * Contains media queries
+* One Javascript Page
+        * Contains: 
+        * Variables, including arrays and value placeholders
+        * event listeners
+        * if/else if statements
+        * function to generate password
+        *functions to verify password validity
 
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
 
-## Review
+## Authors
+***Gopinath Krishnankutty [Git Hub Profile]https://github.com/gopinathkk
+* Monash Univeristy :© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.

@@ -20,7 +20,7 @@ Git Hub
 * [Full Demo Video](https://drive.google.com/file/d/10da4Te-ywl3aBuG3pL4jRAxBcFI6w871/view)
 
 
-![](assets/demo/Animation.gif)
+![](Assets/Animation.gif)
 
 
 ### Prerequisites
@@ -35,7 +35,7 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
 * HTML and CSS and Javascript documents create a random password generator 
 * This project emphasizes the use of using Javascript to make dynamic changes to an HMTL document
 
-![](assets/Images/Password-Generator.PNG)
+![](Assets/Password-Generator.PNG)
 
 ### This project has the following features: 
 * A generate button
@@ -43,12 +43,12 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
     * After user data is collected, a random password will be generated using Javascript
     * The application will verify the password to ensure it meets the criteria slected by the user.
 
-    ![User Criteria selection](assets/Images/Password user entry.PNG)
+    ![](Assets/Password user entry.PNG)
 
     * A Textarea
     * This textarea will display the users password once it is generated
 
-    ![](assets/Images/Password.PNG)
+    ![](Assets/Password.PNG)
 
 
 ### Psuedo Code and Project Requirements: 

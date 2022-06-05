@@ -43,9 +43,10 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
     * After user data is collected, a random password will be generated using Javascript
     * This application will verify the password to ensure it meets the criteria slected by the user.
 
-    ![](Assets/Password-user-entry.png)
+   
+     ![](Assets/Password-user-entry.png)
 
-    * A Textarea
+    * A Text area
     * This textarea will display the users password once it is generated
 
     ![](Assets/Password.png)
@@ -63,7 +64,7 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
     * Once the password is generated, it will be validated to enusre all user selection criteria are met.
     * Event listener will determine the password output of the function to populate the value into the test area.
 
-    ### This project has script features of:
+### This project has script features of:
 * Variable declaration area 
 * An event listener (onclick) called generatePassword
     * This will prompt the user for input between 8-128

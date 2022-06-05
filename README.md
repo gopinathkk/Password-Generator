@@ -43,7 +43,7 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
     * After user data is collected, a random password will be generated using Javascript
     * This application will verify the password to ensure it meets the criteria slected by the user.
 
-    ![](Assets/Password user entry.png)
+    ![](Assets/Password-user-entry.png)
 
     * A Textarea
     * This textarea will display the users password once it is generated
